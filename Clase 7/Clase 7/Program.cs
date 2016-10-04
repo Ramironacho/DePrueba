@@ -32,7 +32,9 @@ namespace Clase_7
             Console.WriteLine("Saldo de cuenta 2: {0:C}", cuenta2.Saldo);
             Console.ReadKey();
 
-
+            /*
+             * hay q tratar de agregar un case para que
+             * pueda elegir la cuenta y que valide los valores a sumar*/
         }
     }
 }
