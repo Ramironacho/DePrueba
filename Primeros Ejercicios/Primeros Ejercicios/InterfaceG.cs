@@ -29,7 +29,9 @@ namespace Primeros_Ejercicios
             Console.WriteLine("4 - Ejercio 4 - Conversión de Unidades de longitud");
             Console.WriteLine("5 - Ejercio 5 - Número invertido");
             Console.WriteLine("6 - Ejercio 6 - Pitagoras");
-            Console.WriteLine("7 - Salir");
+            Console.WriteLine("7 - Ejercio 7 - Parte Decimal");
+            Console.WriteLine("8 - Ejercio 8 - Nota ");
+            Console.WriteLine("10 - Salir");
             Console.Write("Opción: ");
             OpcionMenu = Convert.ToInt32(Console.ReadLine());
         }

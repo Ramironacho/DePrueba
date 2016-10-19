@@ -20,8 +20,44 @@ namespace Primeros_Ejercicios
             //numeroEjercicio = Convert.ToInt32(Console.ReadLine());
             while (salir != 'n')
             {
+                
                 menu.Menu();
-
+                //menu con switch
+                switch (menu.OpcionMenu)
+                {
+                    case 1:
+                        ej.Ejercicio1();
+                        break;
+                    case 2:
+                        ej.Ejercicio2();
+                        break;
+                    case 3:
+                        ej.Ejercicio3();
+                        break;
+                    case 4:
+                        ej.Ejercicio4();
+                        break;
+                    case 5:
+                        ej.Ejercicio5();
+                        break;
+                    case 6:
+                        ej.Ejercicio6();
+                        break;
+                    case 7:
+                        ej.Ejercicio7();
+                        break;
+                    case 8:
+                        ej.Ejercicio8();
+                        break;
+                    case 10:
+                        salir = 'n';
+                        break;
+                    default:
+                        Console.WriteLine("Numero Invalido");
+                        Console.ReadKey();
+                        break;
+                }
+                /* Menu con if
                 if (menu.OpcionMenu == 1)
                     ej.Ejercicio1();
                 else if (menu.OpcionMenu == 2)
@@ -41,10 +77,11 @@ namespace Primeros_Ejercicios
                     Console.WriteLine("Numero Invalido");
                     Console.ReadKey();
 
-                }
+                }*/
                 if (salir == 's')
                 {
                     Console.WriteLine("Desea continuar?: s/n");
+
                     salir = Convert.ToChar(Console.ReadLine());
                 }
 

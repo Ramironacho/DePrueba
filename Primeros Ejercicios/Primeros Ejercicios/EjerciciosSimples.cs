@@ -104,5 +104,46 @@ namespace Primeros_Ejercicios
             Console.WriteLine("El valor de la hipotenusa es: {0}", hipotenusa);
             Console.ReadKey();
         }
+        public void Ejercicio7()
+        {
+            //Escriba un programa que entregue la parte decimal de un número real ingresado por el usuario.
+            string numero;
+            Console.WriteLine("Ingrese el numero: ");
+            numero = Console.ReadLine();
+            //hago un split del valor ingresado por pantalla, los valores obtenidos de split se guardan en un array, por eso el [1].
+            string numeroDecimal = numero.Split('.')[1];
+            
+            
+            Console.WriteLine("El valor de la parte decimal es: {0}", numeroDecimal);
+            Console.ReadKey();
+        }
+        public void Ejercicio8()
+        {
+            /*Un alumno desea saber que nota necesita en el tercer certamen para aprobar un ramo.
+             * El promedio del ramo se calcula con la siguiente formula.
+             * NC=(C1+C2+C3)/3
+             * NC=(C1+C2+C3)/3
+             * NF=NC⋅0.7+NL⋅0.3
+             * NF=NC⋅0.7+NL⋅0.3
+             * Donde NCNC es el promedio de certámenes, NLNL el promedio de laboratorio y NFNF la nota final.
+             * Escriba un programa que pregunte al usuario las notas de los dos primeros certamen y la nota de laboratorio, 
+             * y muestre la nota que necesita el alumno para aprobar el ramo con nota final 60.
+            */
+            int nota1;
+            int nota2;
+            int notaLab;
+            const int notaFinal = 60;
+            Console.WriteLine("Ingrese la primer nota: ");
+            nota1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Ingrese la segunda nota: ");
+            nota2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Ingrese la nota del laboratorio: ");
+            notaLab = Convert.ToInt32(Console.ReadLine());
+                        
+            double notaCuat = (notaFinal - (notaLab * 0.3)) / 0.7;
+            double nota3 = (3 * notaCuat) - nota1 - nota2;
+            Console.WriteLine("El alumno necesita un:{0} para aprobar",nota3);
+            Console.ReadKey();
+        }
     }
 }
