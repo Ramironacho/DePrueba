@@ -53,7 +53,7 @@ namespace Clase_25___arreglovalorreferencia
             {
                 arreglo[i] *= 2;
             }
-            //Creamos un nuevo objeto y asignamos su refrencia al arreglo
+            //Creamos un nuevo objeto y asignamos su referencia al arreglo
             arreglo = new int[] { 11, 12, 13 };
             //fin PrimerDoble
         }
